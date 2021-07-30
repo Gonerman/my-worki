@@ -27,10 +27,58 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
     margin-bottom: 0;
 }
 
+.button {
+    background: var(--btn);
+    color: var(--bs-white) !important;
+    border-radius: 8px;
+    display: block;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    transition: 0.5s;
+}
+.button:hover {
+    background: var(--bs-white);
+    color: var(--btn) !important;
+}
 /* !Root end */
 /* ============================= */
 /* !Header start */
-
+.menu__link {
+    color: var(--link);
+    font-size: 24px;
+    line-height: 16px;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+.menu__link:hover {
+    color: var(--text);
+}
+.menu__icon {
+    line-height: 25px;
+    font-size: 30px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler {
+    color: var(--title);
+    font-size: 30px;
+}
+.navbar {
+    padding: 13px 0;
+}
+.logo__dark {
+    display: none;
+}
+.menu {
+    max-width: 660px;
+    width: 100%;
+}
+.navbar-toggler.collapsed {
+    box-shadow: 0 0 5px var(--title);
+}
 /* !Header end */
 /* ============================= */
 /* !Footer start */
