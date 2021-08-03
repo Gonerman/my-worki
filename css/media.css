@@ -2,6 +2,7 @@
     :root {
         --body: #151437;
         --text: #fff;
+        --dots: #EBEBEB;
     }
     .logo__dark {
         display: inline-block;

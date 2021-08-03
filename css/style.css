@@ -82,7 +82,61 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, p {
 /* !Header end */
 /* ============================= */
 /* !Sliders start */
-
+.slider {
+    margin-top: 30px;
+}
+.slider__subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+.slider__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--title);
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.slider__btn {
+    max-width: 299px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+.slider__logo {
+    margin-bottom: 15px;
+}
+.slider__name {
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--title);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.slider__img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+.slider__indicators {
+        position: static;
+        margin: 0;
+        margin-top: 50px;
+}
+.slider__indicators .slider__dot {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background: var(--dots);
+    margin: 0 15px;
+}
+.slider__indicators .slider__dot.active {
+    background: var(--dots-active);
+}
 /* !Sliders end */
 /* ============================= */
 /* !Footer start */
