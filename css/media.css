@@ -1,24 +1,33 @@
 @media (prefers-color-scheme: dark) {
-    :root {
-        --body: #151437;
-        --text: #fff;
-        --dots: #EBEBEB;
-    }
-    .logo__dark {
-        display: inline-block;
-    }
-    .logo__light {
-        display: none;
-    }
+  :root {
+    --body: #151437;
+    --text: #fff;
+    --dots: #ebebeb;
+  }
+  .logo__dark {
+    display: inline-block;
+  }
+  .logo__light {
+    display: none;
+  }
+  .about__slogan {
+    background: #7177f1;
+  }
 }
 @media (max-width: 991px) {
-    .menu__link {
-        justify-content: flex-start;
-        margin-top: 25px;
-    }
-    .menu__link.button {
-        justify-content: center;
-        max-width: 190px;
-        width: 100%;
-    }
+  .menu__link {
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+  .menu__link.button {
+    justify-content: center;
+    max-width: 190px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .about__title {
+    font-size: 30px;
+    line-height: auto;
+  }
 }
