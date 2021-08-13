@@ -17,6 +17,7 @@ body {
   background: var(--body);
   font-family: var(--font-base);
   color: var(--text);
+  user-select: none;
 }
 
 a {
@@ -86,6 +87,30 @@ p {
   bottom: 196px;
   transform: rotate(41deg);
   border-color: #7177f1;
+}
+.rectangle_5 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 343px;
+  top: 97px;
+}
+.rectangle-6 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  right: 114px;
+  top: -69px;
+}
+
+.title {
+  font-size: 40px;
+  color: var(--title);
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 30px;
 }
 /* !Root end */
 /* ============================= */
@@ -259,23 +284,164 @@ p {
   margin-left: 80px;
 }
 .shape {
-    position: absolute;
-    z-index: -1;
+  position: absolute;
+  z-index: -1;
 }
 .shape_1 {
-    right: 0;
-    top: -200px;
-    max-width: 60%;
+  right: 0;
+  top: -200px;
+  max-width: 60%;
 }
 /* !About end */
 /* ============================= */
-/* !Footer start */
-
-/* !Footer end */
+/* !Accordion start */
+.capabilities {
+  position: relative;
+}
+.accordion__button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: var(--body);
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--title);
+  text-transform: uppercase;
+  position: relative;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.accordion__button::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  height: 1px;
+  background: #ddd;
+}
+.accordion__item:last-of-type .accordion__button::after {
+  display: none;
+}
+.accordion__logo {
+  width: 45px;
+  height: 30px;
+  object-fit: contain;
+  object-position: left;
+}
+.accordion__icon {
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 34px;
+  text-align: left;
+  display: none;
+}
+.accordion__arrow {
+  margin-left: auto;
+  line-height: 10px;
+  font-size: 25px;
+  transition: 0.3s;
+}
+.accordion__button:not(.collapsed) {
+  background: var(--title);
+  color: #fff;
+}
+.accordion__button:not(.collapsed) .accordion__icon {
+  display: inline-block;
+}
+.accordion__button:not(.collapsed) .accordion__logo {
+  display: none;
+}
+.accordion__button:not(.collapsed)::after {
+  display: none;
+}
+.accordion__button:not(.collapsed) .accordion__arrow {
+  transform: rotate(180deg);
+}
+.accordion__desc {
+  background: var(--title);
+  color: #fff;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: capitalize;
+  padding: 10px 30px 52px 30px;
+}
+.accordion {
+  box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* !Accordion end */
 /* ============================= */
-/* !Footer start */
+/* !Works start */
+.works__tab {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  background: var(--body);
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  color: var(--title);
+  display: block;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0 20px;
+  transition: 0.4s;
+}
 
-/* !Footer end */
+.works__tab.active,
+.works__tab:hover {
+  color: var(--body);
+  background: var(--title);
+}
+.works__item:first-of-type .works__tab {
+  border-radius: 8px 8px 0 0;
+}
+.works__item:last-of-type .works__tab {
+  border-radius: 0 0 8px 8px;
+}
+.works__content {
+  padding: 20px 30px 20px 20px;
+  background: var(--body);
+  box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+  border-radius: 8px;
+}
+.works__img {
+  width: 100%;
+  max-height: 320px;
+  height: 100%;
+  border-radius: 0 0 8px 8px;
+  object-fit: cover;
+  object-position: top;
+}
+.works__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--title);
+  margin-bottom: 25px;
+}
+.works__name {
+  text-transform: uppercase;
+}
+.works__desc {
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 27px;
+}
+.works__link {
+  text-transform: capitalize;
+  max-width: 190px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+/* !Works end */
 /* ============================= */
 /* !Footer start */
 
