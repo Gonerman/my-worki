@@ -18,6 +18,7 @@ body {
   font-family: var(--font-base);
   color: var(--text);
   user-select: none;
+  overflow-x: hidden;
 }
 
 a {
@@ -95,14 +96,14 @@ p {
   left: 343px;
   top: 97px;
 }
-.rectangle-6 {
+.rectangle_6 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   right: 114px;
   top: -69px;
 }
-.rectangle-7 {
+.rectangle_7 {
   width: 98px;
   height: 98px;
   border-color: #7177f1;
@@ -110,7 +111,7 @@ p {
   bottom: 35px;
   transform: rotate(40deg);
 }
-.rectangle-8 {
+.rectangle_8 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -118,7 +119,7 @@ p {
   right: 781px;
   bottom: -103px;
 }
-.rectangle-9 {
+.rectangle_9 {
   width: 74px;
   height: 74px;
   border-radius: 50%;
